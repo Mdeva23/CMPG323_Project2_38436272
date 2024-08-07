@@ -143,6 +143,7 @@ namespace CMPG323_Project2_38436272.Controllers
             return NoContent();
         }
 
+        //PRIVATE METHOD TO CHECK IF TELEMETRY EXISTS
         private bool JobTelemetryExists(int id)
         {
             return _context.JobTelemetries.Any(e => e.Id == id);
