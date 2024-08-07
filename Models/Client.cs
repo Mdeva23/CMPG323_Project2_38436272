@@ -12,4 +12,11 @@ public partial class Client
     public string? PrimaryContactEmail { get; set; }
 
     public DateTime? DateOnboarded { get; set; }
+
+    //GET-SET FOR TOTALTIMESAVED AND TOTALCOSTSAVED
+    public class SavingsResult
+    {
+        public double TotalTimeSaved { get; set; }
+        public double TotalCostSaved { get; set; }
+    }
 }

@@ -5,6 +5,13 @@ namespace CMPG323_Project2_38436272.Models;
 
 public partial class JobTelemetry
 {
+
+    public int ProjectId { get; set; } 
+    public int ClientId { get; set; }  
+    public DateTime Date { get; set; } 
+    public double TimeSaved { get; set; }
+    public double CostSaved { get; set; } //MY CODE ENDS HERE
+
     public int Id { get; set; }
 
     public string? ProccesId { get; set; }

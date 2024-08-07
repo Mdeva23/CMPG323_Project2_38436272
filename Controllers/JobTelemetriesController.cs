@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CMPG323_Project2_38436272.Models;
 using Microsoft.AspNetCore.JsonPatch;
+using static CMPG323_Project2_38436272.Models.Client;
 
 namespace CMPG323_Project2_38436272.Controllers
 {
@@ -15,6 +16,7 @@ namespace CMPG323_Project2_38436272.Controllers
     public class JobTelemetriesController : ControllerBase
     {
         private readonly Cmpg323dbContext _context;
+
 
         public JobTelemetriesController(Cmpg323dbContext context)
         {
@@ -143,10 +145,55 @@ namespace CMPG323_Project2_38436272.Controllers
             return NoContent();
         }
 
+        //GetSavingsMethod by project
+        // GET: api/JobTelemetries/GetSavingsByProject/{projectId}
+        [HttpGet("GetSavingsByProject/{projectId}")]
+        public async Task<ActionResult<SavingsResult>> GetSavingsByProject(int projectId, DateTime startDate, DateTime endDate)
+        {
+            var telemetries = await _context.JobTelemetries
+                .Where(t => t.ProjectId == projectId && t.Date >= startDate && t.Date <= endDate)
+                .ToListAsync();
+
+            var totalTimeSaved = telemetries.Sum(t => t.TimeSaved);
+            var totalCostSaved = telemetries.Sum(t => t.CostSaved);
+
+            var result = new SavingsResult
+            {
+                TotalTimeSaved = totalTimeSaved,
+                TotalCostSaved = totalCostSaved
+            };
+
+            return Ok(result);
+        }
+
+        //GetSavingsMethod by Client
+        // GET: api/JobTelemetries/GetSavingsByClient/{clientId}
+        [HttpGet("GetSavingsByClient/{clientId}")]
+        public async Task<ActionResult<SavingsResult>> GetSavingsByClient(int clientId, DateTime startDate, DateTime endDate)
+        {
+            var telemetries = await _context.JobTelemetries
+                .Where(t => t.ClientId == clientId && t.Date >= startDate && t.Date <= endDate)
+                .ToListAsync();
+
+            var totalTimeSaved = telemetries.Sum(t => t.TimeSaved);
+            var totalCostSaved = telemetries.Sum(t => t.CostSaved);
+
+            var result = new SavingsResult
+            {
+                TotalTimeSaved = totalTimeSaved,
+                TotalCostSaved = totalCostSaved
+            };
+
+            return Ok(result);
+        }
+
+
+
         //PRIVATE METHOD TO CHECK IF TELEMETRY EXISTS
         private bool JobTelemetryExists(int id)
         {
             return _context.JobTelemetries.Any(e => e.Id == id);
         }
+
     }
 }
