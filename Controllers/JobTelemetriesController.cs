@@ -84,7 +84,7 @@ namespace CMPG323_Project2_38436272.Controllers
             return CreatedAtAction("GetJobTelemetry", new { id = jobTelemetry.Id }, jobTelemetry);
         }
 
-        //MY ADDED CODE/PATCH
+        //CODE FOR PATCH
         //PATCH: api/JobTelemetries
         [HttpPatch("{id}")]
         public async Task<IActionResult> PatchJobTelemetry(int id, [FromBody] JsonPatchDocument<JobTelemetry> patchDoc)
