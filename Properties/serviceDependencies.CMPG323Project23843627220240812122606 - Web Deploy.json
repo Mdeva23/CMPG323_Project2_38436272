@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/CMPG323Project238436272api/apis/CMPG323Project238436272",
+      "type": "apis.azure"
+    }
+  }
+}

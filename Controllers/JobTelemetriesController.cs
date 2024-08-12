@@ -9,6 +9,7 @@ using CMPG323_Project2_38436272.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using static CMPG323_Project2_38436272.Models.Client;
 
+
 namespace CMPG323_Project2_38436272.Controllers
 {
     [Route("api/[controller]")]
