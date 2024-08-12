@@ -70,3 +70,19 @@ Create an API Service on Azure
 
 Ensure your repository is private and regularly updated throughout the project.
 Commit and push all changes to GitHub.
+
+## REFERENCE LIST
+CMPG323-IT Developments .2023. 17 Aug CMPG323 weekly virtual class Cloud, deploy API. 17 Aug CMPG323 weekly virtual class Cloud, deploy API (youtube.com) Date of Access: 01 Aug. 2024.
+CMPG323-IT Developments .2023. 3 Aug CMPG323 weekly virtual class Intro to APIs. 3 August CMPG323 weekly virtual class Intro to APIs (youtube.com) Date of Access: 01 Aug. 2024.
+CMPG323-IT Developments .2023. 10 Aug CMPG323 weekly virtual class API Controllers. 10 Aug CMPG323 weekly virtual class API Controllers (youtube.com) Date of Access: 01 Aug. 2024.
+CMPG323-IT Developments .2023. 24 Aug CMPG323 weekly virtual class API Security. 24 Aug CMPG323 weekly virtual class API Security (youtube.com) Date of Access: 01 Aug. 2024.
+Larkin,K & Anderson, R .2024. Tutorial: Create a web API with ASP.NET Core. Tutorial: Create a web API with ASP.NET Core | Microsoft Learn Date of access: 04 Aug. 2024.
+Muller, J. 2024. 02 Introduction to API, 10 July 2024. 
+https://efundi.nwu.ac.za/access/content/group/4493dc23-83c1-4f78-aaa6-89a19cd28d5f/Slides/02%20Introduction%20to%20APIs.pptx
+Date of Access: 01 Aug. 2024.
+Muller, J. 2024. 02 Introduction to API Security, 10 Jul 2024. https://efundi.nwu.ac.za/access/content/group/4493dc23-83c1-4f78-aaa6-89a19cd28d5f/Slides/02%20Introduction%20to%20API%20Security.pptx Date of Access: 01 Aug. 2024.
+Muller, J .2022. Join two entities in NET Core, using lambda and Entity Framework Core. Join two entities in .NET Core, using lambda and Entity Framework Core - JD Bots (jd-bots.com) Date of access: 01 Aug. 2024.
+Sanjay .2020. Entity Framework Core in ASP.NET ore 3.1- Getting Started. Entity Framework Core in ASP.NET Core 3.1 - Getting Started | Pro Code Guide Date of access: 01 Aug. 2024.
+Soucoup, M .2022. Publish an ASP.NET Core web API to Azure API Management with Visual Studio. Publish an ASP.NET Core web API to Azure API Management with Visual Studio | Microsoft Learn Date of access: 01 Aug. 2024.
+Suter, R & Nienaber, C .2024. ASP.NET Core web API documentation with Swagger/ OpenAPI. ASP.NET Core web API documentation with Swagger / OpenAPI | Microsoft Learn Date of access: 01 Aug. 2024.
+TheOyinbooke. 2023. How to Fix SQL Cannot Connect Error in SQL Server Management Studio. How to Fix SQL Cannot Connect Error in SQL Server Management Studio (youtube.com) Date of access: 03 Aug. 2024.
